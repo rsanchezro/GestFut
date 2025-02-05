@@ -77,11 +77,8 @@ class CalendarioFragmento : Fragment() {
 
     private fun inicializar_recycler() {
             this.mirecycler= mibinding.reciclerCalendario
-
             this.mirecycler.layoutManager =LinearLayoutManager(context)
-
             this.miadaptador=AdaptadorPartido(PartidoProveedor.partidos)
-
             this.mirecycler.adapter=this.miadaptador
 
     }

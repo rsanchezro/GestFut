@@ -8,7 +8,6 @@ class EquipoProveedor {
     companion object{
 
 
-
         private var appContext: Context? = null
         private var _equipos: MutableList<Equipo>? = null
 
@@ -16,7 +15,7 @@ class EquipoProveedor {
             appContext = context.applicationContext
         }
 
-        val partidos: MutableList<Equipo>
+        val equipos: MutableList<Equipo>
             get() {
                 if (_equipos == null) {
                     _equipos = cargarPartidosDesdeJson()
