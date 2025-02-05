@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/calendario"
+        android:icon="@drawable/baseline_calendar_today_24"
+        android:title="CALENDARIO" />
+    <item
+        android:id="@+id/clasificacion"
+        android:icon="@drawable/baseline_format_list_numbered_24"
+        android:title="CLASIFICACION" />
+</menu>
