@@ -61,10 +61,7 @@ class CalendarioFragmento : Fragment() {
                 id: Long
             ) {
                 var jornada_sel=parent?.getItemAtPosition(position)
-                if(jornada_sel!=0)
-                     miadaptador.establecerPartidos(PartidoProveedor.partidos.filter { it.jornada==jornada_sel })
-                else
-                    miadaptador.establecerPartidos(PartidoProveedor.partidos)
+
             }
 
             override fun onNothingSelected(parent: AdapterView<*>?) {
