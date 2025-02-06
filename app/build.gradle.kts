@@ -45,7 +45,11 @@ dependencies {
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.3")
-
+    implementation("androidx.recyclerview:recyclerview:1.3.2")
+    /* LIBRERIAS GLIDE, aunque la documentación oficial nos
+  * marca la sentencia sin parentesis la sintaxis de esta versión de gradle es necesario
+  * parentesis y entre comillas dobles*/
+    implementation ("com.github.bumptech.glide:glide:4.16.0")
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
     testImplementation(libs.junit)
