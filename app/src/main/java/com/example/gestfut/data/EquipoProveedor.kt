@@ -16,7 +16,7 @@ class EquipoProveedor {
             appContext = context.applicationContext
         }
 
-        val partidos: MutableList<Equipo>
+        val equipos: MutableList<Equipo>
             get() {
                 if (_equipos == null) {
                     _equipos = cargarPartidosDesdeJson()
