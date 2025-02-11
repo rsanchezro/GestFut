@@ -14,6 +14,7 @@
         android:id="@+id/logoequipolocal_edi"
         android:layout_width="40dp"
         android:layout_height="40dp"
+        android:layout_marginTop="8dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:src="@drawable/ic_soccer"
@@ -24,6 +25,7 @@
         android:id="@+id/logoequipovis_edi"
         android:layout_width="40dp"
         android:layout_height="40dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:src="@drawable/ic_soccer"
@@ -34,30 +36,31 @@
         android:id="@+id/goles_local_editext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
+
+        android:textAlignment="center"
+        android:layout_marginEnd="24dp"
         android:layout_marginTop="8dp"
-        android:hint="Goles_Loc"
+        android:hint="GL"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="22sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/logoequipolocal_edi"
+        app:layout_constraintEnd_toStartOf="@+id/guion_edi"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/goles_visitante_editext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical"
+        android:textAlignment="center"
+
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginStart= "24dp"
         android:layout_marginRight="32dp"
-        android:hint="Goles_Vis"
+        android:hint="GV"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="22sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/logoequipovis_edi"
+        app:layout_constraintStart_toEndOf="@+id/guion_edi"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -65,14 +68,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
-        android:layout_marginTop="8dp"
         android:text="-"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="22sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/goles_visitante_editext"
-        app:layout_constraintStart_toEndOf="@+id/goles_local_editext"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toBottomOf="@+id/goles_local_editext"
+     app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/goles_local_editext" />
 
     <TextView
         android:id="@+id/nombre_equipolocal_edi"
@@ -100,11 +103,12 @@
         android:id="@+id/fecha_partido_edi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:text="fecha_hora"
         android:textSize="10sp"
+
+       android:layout_marginBottom="2dp"
         app:layout_constraintEnd_toEndOf="@+id/guion_edi"
         app:layout_constraintStart_toStartOf="@+id/guion_edi"
-        app:layout_constraintTop_toBottomOf="@+id/guion_edi" />
+        app:layout_constraintBottom_toBottomOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

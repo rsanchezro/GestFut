@@ -24,6 +24,8 @@ class EquipoProveedor {
                 return _equipos!!
             }
 
+
+
         private fun cargarPartidosDesdeJson(): MutableList<Equipo> {
             return try {
 
